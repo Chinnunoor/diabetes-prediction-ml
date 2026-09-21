@@ -8,13 +8,18 @@ How effectively can standard supervised-learning models distinguish diabetes out
 
 ## Repository structure
 
-\`\`\`text
+~~~text
 data/       Source dataset used by the notebook
 notebooks/  Reproducible exploratory analysis and modeling notebook
 src/        Space for reusable project code as the study is extended
-results/    Reserved for generated metrics, figures, and model outputs
+results/    Extracted metrics, tables, and research figures
+docs/       Research question, methodology, results, and future-work notes
 reports/    Presentation and exported HTML research artifacts
-\`\`\`
+~~~
+
+## Research Objective
+
+The project investigates how machine-learning models can support accurate and interpretable early diabetes risk prediction from clinical attributes. The current work is an exploratory research study using the included dataset; it is not a validated clinical decision-support system.
 
 ## Analysis workflow
 
@@ -33,19 +38,29 @@ The analysis is intentionally retained in its original notebook form. Results sh
 
 Create an environment and install the dependencies:
 
-\`\`\`bash
+~~~bash
 python -m venv .venv
 source .venv/bin/activate       # Windows: .venv\\Scripts\\activate
 pip install -r requirements.txt
-\`\`\`
+~~~
 
 Launch Jupyter from the repository root:
 
-\`\`\`bash
+~~~bash
 jupyter notebook notebooks/diabetes_prediction_modeling.ipynb
-\`\`\`
+~~~
 
-The notebook reads the dataset from \`data/diabetes.csv\` using a repository-relative path.
+The notebook reads the dataset from data/diabetes.csv using a repository-relative path.
+
+## Methodology
+
+The preserved notebook performs dataset inspection, data-quality checks, exploratory visualization, sequential IQR-based outlier filtering, class-balance assessment, SMOTE experimentation, stratified hold-out evaluation, random-forest cross-validation, and feature-selection analysis. See docs/methodology.md for the research-method summary and important validation caveats.
+
+## Results Summary
+
+Extracted evidence is available in results/model_comparison.csv and results/evaluation_metrics.csv. The baseline hold-out results show that the random forest had the highest recorded baseline accuracy (0.7500), while the SMOTE random-forest hold-out experiment recorded 0.8162 accuracy. These values are dataset- and split-specific, and ROC-AUC was not computed in the existing notebook outputs.
+
+Visual evidence is provided in results/feature_importance_random_forest.svg, the baseline confusion-matrix plots, and results/roc_auc_comparison.svg. The figures are extracted or reconstructed from the notebook's stored evidence and are not a substitute for external validation.
 
 ## Reproducibility and limitations
 
@@ -56,7 +71,15 @@ The notebook reads the dataset from \`data/diabetes.csv\` using a repository-rel
 
 ## Research artifacts
 
-The \`reports/\` directory contains the existing exported analysis HTML and presentation. Generated figures, tables, and additional reports can be added under \`results/\` and \`reports/\` without changing the source notebook.
+The reports/ directory contains the existing exported analysis HTML and presentation. Generated figures, tables, and additional reports can be added under results/ and reports/ without changing the source notebook.
+
+## Explainable AI Direction
+
+The src/explainability.py module provides optional SHAP integration, model-agnostic explanation utilities, and feature-importance helpers. The current repository does not contain a serialized fitted model, so SHAP values must be generated in a future execution after fitting or exporting a model with compatible feature data.
+
+## Future Research
+
+Priority next steps include leakage-safe resampling within cross-validation, fixed random seeds, calibration and threshold analysis, fairness evaluation across relevant subgroups, external validation on larger clinical datasets, and prospective assessment of workflow and deployment risks. See docs/future_work.md.
 
 ## License and data use
 

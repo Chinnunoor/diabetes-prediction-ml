@@ -13,13 +13,12 @@ ENV/
 # Jupyter
 .ipynb_checkpoints/
 
-# Generated research outputs
-results/*
-!results/.gitkeep
+# Local scratch outputs; committed research evidence belongs in results/
+results/*.tmp
+results/*.bak
 *.png
 *.jpg
 *.jpeg
-*.svg
 *.pdf
 
 # Local configuration and secrets

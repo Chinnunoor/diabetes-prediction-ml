@@ -1,0 +1,23 @@
+model,dataset,metric,value,average_or_class,evaluation_type,source
+Logistic Regression,filtered original data,accuracy,0.738636,overall,stratified hold-out,notebook cell 53
+Logistic Regression,filtered original data,precision,0.44,Outcome=1,stratified hold-out,notebook cell 54
+Logistic Regression,filtered original data,recall,0.67,Outcome=1,stratified hold-out,notebook cell 54
+Logistic Regression,filtered original data,f1_score,0.53,Outcome=1,stratified hold-out,notebook cell 54
+SVM,filtered original data,accuracy,0.721591,overall,stratified hold-out,notebook cell 60
+SVM,filtered original data,precision,0.41,Outcome=1,stratified hold-out,notebook cell 61
+SVM,filtered original data,recall,0.63,Outcome=1,stratified hold-out,notebook cell 61
+SVM,filtered original data,f1_score,0.49,Outcome=1,stratified hold-out,notebook cell 61
+Decision Tree,filtered original data,accuracy,0.698864,overall,stratified hold-out,notebook cell 67
+Decision Tree,filtered original data,precision,0.63,Outcome=1,stratified hold-out,notebook cell 68
+Decision Tree,filtered original data,recall,0.54,Outcome=1,stratified hold-out,notebook cell 68
+Decision Tree,filtered original data,f1_score,0.58,Outcome=1,stratified hold-out,notebook cell 68
+Random Forest,filtered original data,accuracy,0.75,overall,stratified hold-out,notebook cell 74
+Random Forest,filtered original data,precision,0.53,Outcome=1,stratified hold-out,notebook cell 75
+Random Forest,filtered original data,recall,0.66,Outcome=1,stratified hold-out,notebook cell 75
+Random Forest,filtered original data,f1_score,0.58,Outcome=1,stratified hold-out,notebook cell 75
+Random Forest,SMOTE-resampled data,accuracy,0.816239,overall,stratified hold-out,notebook cell 81
+Random Forest,SMOTE-resampled data,accuracy,0.913978,maximum fold accuracy,10-fold cross-validation,notebook cell 87
+Random Forest,reduced feature experiment,accuracy,0.816239,overall,stratified hold-out,notebook cell 100
+Random Forest,reduced feature experiment,accuracy,0.904255,maximum fold accuracy,10-fold cross-validation,notebook cell 102
+Random Forest,feature-importance experiment,accuracy,1.0,overall,stratified hold-out,notebook cell 111
+Random Forest,feature-importance experiment,accuracy,0.840426,maximum fold accuracy,10-fold cross-validation,notebook cell 113
