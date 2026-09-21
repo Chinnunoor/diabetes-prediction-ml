@@ -1,106 +1,156 @@
-# Diabetes Prediction Using Machine Learning
+# Diabetes Prediction Using Supervised and Unsupervised Machine Learning
 
-Research portfolio for an exploratory machine-learning study of diabetes outcome prediction using clinical and demographic features.
+This repository contains the implementation, analysis, and supporting materials for the published research work on diabetes prediction using supervised and unsupervised machine learning approaches.
 
-## Project Visualization
+The repository is organized as a reproducible research portfolio: the notebook preserves the modeling workflow, `src/` contains reusable explainability utilities, `results/` contains extracted evidence and figures, and `docs/` records the methodology, interpretation, and limitations. The checked-in notebook currently provides the reproducible supervised-modeling path; the broader supervised and unsupervised scope reflects the published research title.
 
-The figures below present the complete research story using the STAR structure: healthcare motivation, predictive objective, analytical workflow, recorded results, and an explainability path. They are designed as research-communication artifacts and do not add or replace any modeling results.
+## Research Achievement
 
-![STAR research architecture](results/figures/project_visualization.svg)
+> **Best Paper Award**
+> **“Diabetes Prediction Using Supervised and Unsupervised Machine Learning”**
 
-*Figure 1. STAR architecture connecting the healthcare situation, research task, machine-learning action, and evidence-oriented result interpretation.*
+| Detail | Information |
+| --- | --- |
+| **Award recipient** | Noor Mohammed Vempalli |
+| **Conference** | International Conference on Embracing The Digital Horizon (EDH 2024) |
+| **Institution** | Madanapalle Institute of Technology & Science |
+| **Date** | March 13–14, 2024 |
 
-![Machine-learning workflow architecture](results/figures/ml_workflow.svg)
+| Research link | Reference |
+| --- | --- |
+| **GitHub repository** | [Chinnunoor/diabetes-prediction-ml](https://github.com/Chinnunoor/diabetes-prediction-ml) |
+| **Publication** | [ResearchGate publication record](https://www.researchgate.net/publication/408187952_Diabetes_Prediction_Using_Supervised_and_Unsupervised_Machine_Learning) |
+| **DOI** | [10.2174/9798898814441126060026](https://doi.org/10.2174/9798898814441126060026) |
+| **Award certificate** | No certificate file or public certificate link is currently included in this repository. |
 
-*Figure 2. End-to-end workflow from patient clinical data through preprocessing, EDA, feature selection, SMOTE experimentation, model training, evaluation, and explainability.*
+## My Contributions
 
-![Results summary dashboard](results/figures/results_dashboard.svg)
+My contribution is represented through the implementation and research artifacts maintained in this repository:
 
-*Figure 3. Results dashboard using the repository’s preserved hold-out metrics, confusion-matrix examples, random-forest feature importance, and explicit evidence notes for unavailable metrics.*
+- Designed and organized the end-to-end machine-learning research workflow in [`notebooks/diabetes_prediction_modeling.ipynb`](notebooks/diabetes_prediction_modeling.ipynb), including data inspection, exploratory analysis, preprocessing, model training, and evaluation.
+- Implemented the data-quality and preprocessing path, including duplicate and missing-value checks, sequential IQR-based outlier filtering, class-balance inspection, and SMOTE experimentation; see [`docs/methodology.md`](docs/methodology.md).
+- Developed the model-evaluation workflow for logistic regression, support vector classification, decision tree, and random-forest baselines, with stratified hold-out metrics, classification reports, confusion matrices, and cross-validation experiments.
+- Performed feature analysis using chi-squared `SelectKBest` selection and random-forest feature importance; the preserved analysis identifies Glucose, BMI, Age, and DiabetesPedigreeFunction as leading features in the recorded fitted model.
+- Structured a reproducible research repository with source data, notebook, extracted CSV evidence, version-controlled SVG figures, documentation, and exported reports.
+- Created technical visualizations and research documentation, including the workflow, results dashboard, project architecture, explainability direction, methodology, results interpretation, and future-work materials.
+- Added reusable SHAP preparation and explanation utilities in [`src/explainability.py`](src/explainability.py), while documenting that a serialized fitted model is required before generating model-specific SHAP outputs.
+
+## Research Implementation
+
+The research workflow is summarized below. The published work spans supervised and unsupervised approaches; the current checked-in notebook provides the supervised model-comparison path and associated exploratory analyses.
+
+```text
+Research Problem
+        ↓
+Clinical Dataset Analysis
+        ↓
+Data Preprocessing
+        ↓
+Feature Engineering
+        ↓
+Supervised & Unsupervised ML Models
+        ↓
+Model Evaluation
+        ↓
+Feature Interpretation
+        ↓
+Research Insights
+```
+
+### Research architecture and workflow
+
+![Research project visualization](results/figures/project_visualization.svg)
+
+*Research architecture connecting the healthcare motivation, predictive task, machine-learning workflow, evidence, and interpretation.*
+
+![Machine-learning workflow](results/figures/ml_workflow.svg)
+
+*Implementation workflow from dataset inspection through preprocessing, exploratory analysis, model evaluation, and explainability.*
+
+![Results dashboard](results/figures/results_dashboard.svg)
+
+*Evidence dashboard summarizing preserved model metrics, confusion-matrix examples, feature importance, and unavailable metrics.*
 
 ![Explainable AI direction](results/figures/explainable_ai.svg)
 
-*Figure 4. Explainable AI direction showing how global feature importance can extend toward local attributions and human review after a compatible fitted model is available.*
+*Explainability path from global feature importance toward future local explanations after a compatible fitted model is available.*
 
-## Research question
+## Results Showcase
 
-How effectively can standard supervised-learning models distinguish diabetes outcomes in the included dataset, and which features contribute most to model performance?
+The repository preserves the recorded outputs of the exploratory study rather than presenting them as clinical validation:
 
-## Repository structure
+| Visualization | What it demonstrates |
+| --- | --- |
+| [Model comparison](results/model_comparison.csv) | Baseline accuracy, precision, recall, and F1-score comparisons for the preserved classifier experiments. |
+| [Feature importance](results/feature_importance_random_forest.svg) | Relative feature importance in the stored random-forest output; this is model-specific and not causal evidence. |
+| [Confusion matrices](results/confusion_matrix_logistic_regression.svg) · [SVM](results/confusion_matrix_svm.svg) · [decision tree](results/confusion_matrix_decision_tree.svg) · [random forest](results/confusion_matrix_random_forest.svg) | Class-level prediction counts for the baseline experiments, preserving the orientation of the original notebook output. |
+| [Evaluation visualizations](results/roc_auc_comparison.svg) · [metrics table](results/evaluation_metrics.csv) | Recorded evaluation evidence and an explicit indication that ROC-AUC was not computed in the preserved notebook outputs. |
 
-~~~text
+Among the preserved stratified hold-out experiments, random forest recorded the highest baseline accuracy at 0.7500. A separate SMOTE random-forest hold-out experiment recorded 0.8162 accuracy, but its complete classification report was not preserved. These values are split- and dataset-specific; they should not be interpreted as clinical performance estimates. See [`docs/results_analysis.md`](docs/results_analysis.md) for the full interpretation and caveats.
+
+## Publication
+
+**Title:** Diabetes Prediction Using Supervised and Unsupervised Machine Learning
+
+**Authors:**
+
+- Noor Mohammed Vempalli
+- BSH. Shayeez Ahamed
+- Shaik Fazeelunnisa
+- Obulam Vinisha
+- K. Yeswanth
+
+**Publication and conference details:**
+
+- [ResearchGate publication record](https://www.researchgate.net/publication/408187952_Diabetes_Prediction_Using_Supervised_and_Unsupervised_Machine_Learning)
+- [DOI: 10.2174/9798898814441126060026](https://doi.org/10.2174/9798898814441126060026)
+- International Conference on Embracing The Digital Horizon (EDH 2024)
+- Madanapalle Institute of Technology & Science
+- March 13–14, 2024
+
+## Repository Structure
+
+```text
 data/       Source dataset used by the notebook
 notebooks/  Reproducible exploratory analysis and modeling notebook
-src/        Space for reusable project code as the study is extended
-results/    Extracted metrics, tables, and research figures
-docs/       Research question, methodology, results, and future-work notes
-reports/    Presentation and exported HTML research artifacts
-~~~
+src/        Reusable explainability utilities
+results/    Extracted metrics, tables, confusion matrices, and research figures
+docs/       Research question, methodology, results analysis, and future work
+reports/    Exported HTML analysis and presentation artifacts
+```
 
-## Research Objective
-
-The project investigates how machine-learning models can support accurate and interpretable early diabetes risk prediction from clinical attributes. The current work is an exploratory research study using the included dataset; it is not a validated clinical decision-support system.
-
-## Analysis workflow
-
-The notebook documents the current research workflow:
-
-- dataset inspection and data-quality checks
-- exploratory visualization and outlier filtering
-- class-balance inspection and SMOTE experimentation
-- train/test evaluation of logistic regression, SVM, and tree-based models
-- random-forest cross-validation
-- univariate feature selection and feature-importance analysis
-
-The analysis is intentionally retained in its original notebook form. Results should be interpreted as an educational/research investigation, not as clinical validation or a diagnostic system.
-
-## Getting started
+## Reproducibility
 
 Create an environment and install the dependencies:
 
-~~~bash
+```bash
 python -m venv .venv
 source .venv/bin/activate       # Windows: .venv\\Scripts\\activate
 pip install -r requirements.txt
-~~~
+```
 
 Launch Jupyter from the repository root:
 
-~~~bash
+```bash
 jupyter notebook notebooks/diabetes_prediction_modeling.ipynb
-~~~
+```
 
-The notebook reads the dataset from data/diabetes.csv using a repository-relative path.
+The notebook reads the dataset from `data/diabetes.csv` using a repository-relative path. Extracted evidence is available in [`results/model_comparison.csv`](results/model_comparison.csv) and [`results/evaluation_metrics.csv`](results/evaluation_metrics.csv), while the exported analysis and presentation are preserved under [`reports/`](reports/).
 
-## Methodology
+## Research Scope and Limitations
 
-The preserved notebook performs dataset inspection, data-quality checks, exploratory visualization, sequential IQR-based outlier filtering, class-balance assessment, SMOTE experimentation, stratified hold-out evaluation, random-forest cross-validation, and feature-selection analysis. See docs/methodology.md for the research-method summary and important validation caveats.
+This is an exploratory research implementation, not a validated clinical decision-support system. The current workflow uses model defaults and unseeded random splits; resampling is not nested inside validation folds; the dataset provenance and cohort definition require further documentation; and the preserved outputs do not include calibration, external validation, fairness analysis, confidence intervals, or decision-curve analysis. Biomedical zero values and outlier filtering also require domain-informed review.
 
-## Results Summary
-
-Extracted evidence is available in results/model_comparison.csv and results/evaluation_metrics.csv. The baseline hold-out results show that the random forest had the highest recorded baseline accuracy (0.7500), while the SMOTE random-forest hold-out experiment recorded 0.8162 accuracy. These values are dataset- and split-specific, and ROC-AUC was not computed in the existing notebook outputs.
-
-Visual evidence is provided in results/feature_importance_random_forest.svg, the baseline confusion-matrix plots, and results/roc_auc_comparison.svg. The figures are extracted or reconstructed from the notebook's stored evidence and are not a substitute for external validation.
-
-## Reproducibility and limitations
-
-- Several notebook cells use model defaults and unseeded random splits; exact metrics may vary between runs.
-- The notebook contains both the original imbalanced-data experiments and subsequent SMOTE experiments. Resampling strategy and validation design should be revisited before drawing conclusions.
-- The dataset provenance, cohort definition, and clinical applicability should be documented further before publication.
-- This repository does not provide medical advice and must not be used for patient-level decisions.
-
-## Research artifacts
-
-The reports/ directory contains the existing exported analysis HTML and presentation. Generated figures, tables, and additional reports can be added under results/ and reports/ without changing the source notebook.
-
-## Explainable AI Direction
-
-The src/explainability.py module provides optional SHAP integration, model-agnostic explanation utilities, and feature-importance helpers. The current repository does not contain a serialized fitted model, so SHAP values must be generated in a future execution after fitting or exporting a model with compatible feature data.
+The repository does not provide medical advice and must not be used for patient-level decisions. See [`docs/methodology.md`](docs/methodology.md) and [`docs/results_analysis.md`](docs/results_analysis.md) for detailed caveats.
 
 ## Future Research
 
-Priority next steps include leakage-safe resampling within cross-validation, fixed random seeds, calibration and threshold analysis, fairness evaluation across relevant subgroups, external validation on larger clinical datasets, and prospective assessment of workflow and deployment risks. See docs/future_work.md.
+- **Explainable AI:** Generate global and local SHAP explanations from a serialized or freshly fitted model, with clinical review of interpretation.
+- **Clinical interpretability:** Evaluate calibration, thresholds, uncertainty, and clinically meaningful error trade-offs.
+- **Larger healthcare datasets:** Validate on larger, more diverse, and external datasets with documented cohort and label construction.
+- **Model robustness:** Use leakage-safe resampling, fixed seeds, subgroup analysis, confidence intervals, and sensitivity analyses.
+- **Real-world healthcare deployment:** Study privacy, governance, workflow integration, monitoring, prospective silent evaluation, and human factors before any patient-facing use.
 
-## License and data use
+## License and Data Use
 
-No license has been added yet. Before public distribution, add an appropriate code license and document the dataset license/provenance and any applicable privacy or redistribution constraints.
+No software license has been added yet. Before public distribution, add an appropriate code license and document the dataset license, provenance, privacy, and redistribution constraints.
