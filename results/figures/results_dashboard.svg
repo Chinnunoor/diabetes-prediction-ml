@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
+  <rect width="1500" height="980" fill="#f6f8fa"/><rect width="1500" height="16" fill="#17324d"/>
+  <g font-family="Arial,Helvetica,sans-serif">
+    <text x="80" y="70" font-size="27" font-weight="700" fill="#17324d">Results summary dashboard</text>
+    <text x="80" y="104" font-size="16" fill="#5b6b77">Recorded hold-out evidence from the preserved notebook; Outcome = 1 metrics shown where available</text>
+    <line x1="80" y1="134" x2="1420" y2="134" stroke="#c8d3da" stroke-width="2"/>
+    <text x="80" y="178" font-size="17" font-weight="700" fill="#17324d">Model comparison</text>
+    <text x="80" y="203" font-size="12" fill="#7b8b95">Baseline filtered-data hold-out; bars show proportion (0–1)</text>
+    <g fill="#ffffff" stroke="#d5e0e5"><rect x="80" y="225" width="800" height="298" rx="7"/></g>
+    <g font-size="12" fill="#7b8b95"><text x="292" y="250">0.0</text><text x="447" y="250">0.25</text><text x="602" y="250">0.50</text><text x="757" y="250">0.75</text><text x="850" y="250">1.0</text></g>
+    <g stroke="#e4eaed"><line x1="292" y1="260" x2="292" y2="500"/><line x1="447" y1="260" x2="447" y2="500"/><line x1="602" y1="260" x2="602" y2="500"/><line x1="757" y1="260" x2="757" y2="500"/><line x1="850" y1="260" x2="850" y2="500"/></g>
+    <g font-size="13" fill="#344956"><text x="100" y="292">Logistic Regression</text><text x="100" y="348">SVM</text><text x="100" y="404">Decision Tree</text><text x="100" y="460">Random Forest</text></g>
+    <g fill="#2a7f8e"><rect x="292" y="278" width="457" height="14" rx="3"/><rect x="292" y="334" width="447" height="14" rx="3"/><rect x="292" y="390" width="433" height="14" rx="3"/><rect x="292" y="446" width="465" height="14" rx="3"/></g>
+    <g fill="#b77731"><rect x="292" y="300" width="273" height="8"/><rect x="292" y="356" width="254" height="8"/><rect x="292" y="412" width="390" height="8"/><rect x="292" y="468" width="329" height="8"/></g>
+    <g font-size="11" fill="#5b6b77"><text x="760" y="290">Accuracy 0.739</text><text x="760" y="307">P 0.44 · R 0.67 · F1 0.53</text><text x="750" y="346">Accuracy 0.722</text><text x="750" y="363">P 0.41 · R 0.63 · F1 0.49</text><text x="736" y="402">Accuracy 0.699</text><text x="736" y="419">P 0.63 · R 0.54 · F1 0.58</text><text x="768" y="458">Accuracy 0.750</text><text x="768" y="475">P 0.53 · R 0.66 · F1 0.58</text></g>
+    <rect x="100" y="490" width="12" height="7" fill="#2a7f8e"/><text x="118" y="498" font-size="11" fill="#5b6b77">Accuracy</text><rect x="180" y="490" width="12" height="7" fill="#b77731"/><text x="198" y="498" font-size="11" fill="#5b6b77">F1-score</text>
+
+    <text x="930" y="178" font-size="17" font-weight="700" fill="#17324d">Confusion-matrix examples</text>
+    <text x="930" y="203" font-size="12" fill="#7b8b95">Stored orientation: rows = predictions, columns = observed labels</text>
+    <g stroke="#d5e0e5" fill="#ffffff"><rect x="930" y="225" width="210" height="298" rx="7"/><rect x="1170" y="225" width="210" height="298" rx="7"/></g>
+    <g font-size="14" font-weight="700" fill="#17324d"><text x="1035" y="252" text-anchor="middle">Logistic Regression</text><text x="1275" y="252" text-anchor="middle">Random Forest</text></g>
+    <g font-size="11" fill="#7b8b95" text-anchor="middle"><text x="1035" y="278">Observed 0     Observed 1</text><text x="1275" y="278">Observed 0     Observed 1</text></g>
+    <g fill="#d8eeec" stroke="#ffffff" stroke-width="2"><rect x="970" y="294" width="64" height="58"/><rect x="1034" y="294" width="64" height="58"/><rect x="970" y="352" width="64" height="58"/><rect x="1034" y="352" width="64" height="58"/><rect x="1210" y="294" width="64" height="58"/><rect x="1274" y="294" width="64" height="58"/><rect x="1210" y="352" width="64" height="58"/><rect x="1274" y="352" width="64" height="58"/></g>
+    <g font-size="20" font-weight="700" fill="#17324d" text-anchor="middle"><text x="1002" y="330">104</text><text x="1066" y="330">33</text><text x="1002" y="388">13</text><text x="1066" y="388">26</text><text x="1242" y="330">101</text><text x="1306" y="330">28</text><text x="1242" y="388">16</text><text x="1306" y="388">31</text></g>
+    <g font-size="11" fill="#5b6b77"><text x="950" y="448">TN 104 · FP 33</text><text x="950" y="468">FN 13 · TP 26</text><text x="1190" y="448">TN 101 · FP 28</text><text x="1190" y="468">FN 16 · TP 31</text></g>
+    <rect x="930" y="490" width="450" height="33" rx="4" fill="#fff5e8"/><text x="1155" y="511" text-anchor="middle" font-size="11" fill="#8a5d2d">SMOTE random-forest accuracy recorded separately: 0.816</text>
+
+    <text x="80" y="590" font-size="17" font-weight="700" fill="#17324d">Feature importance — random forest</text>
+    <text x="80" y="615" font-size="12" fill="#7b8b95">Stored notebook values; importance is predictive association, not causal effect</text>
+    <g fill="#ffffff" stroke="#d5e0e5"><rect x="80" y="638" width="800" height="250" rx="7"/></g>
+    <g font-size="12" fill="#344956"><text x="100" y="675">Glucose</text><text x="100" y="700">BMI</text><text x="100" y="725">Age</text><text x="100" y="750">Pedigree function</text><text x="100" y="775">Blood Pressure</text><text x="100" y="800">Pregnancies</text><text x="100" y="825">Insulin</text></g>
+    <g fill="#2a7f8e"><rect x="250" y="664" width="388" height="14"/><rect x="250" y="689" width="273" height="14"/><rect x="250" y="714" width="202" height="14"/><rect x="250" y="739" width="192" height="14"/><rect x="250" y="764" width="117" height="14"/><rect x="250" y="789" width="102" height="14"/><rect x="250" y="814" width="101" height="14"/></g>
+    <g font-size="12" fill="#5b6b77"><text x="650" y="676">0.2648</text><text x="535" y="701">0.1861</text><text x="464" y="726">0.1374</text><text x="454" y="751">0.1311</text><text x="379" y="776">0.0803</text><text x="364" y="801">0.0696</text><text x="363" y="826">0.0693</text></g>
+    <rect x="930" y="638" width="450" height="250" rx="7" fill="#ffffff" stroke="#d5e0e5"/>
+    <text x="955" y="677" font-size="16" font-weight="700" fill="#17324d">Evidence notes</text>
+    <text x="955" y="712" font-size="14" fill="#344956">• ROC-AUC was not computed in the</text><text x="975" y="733" font-size="14" fill="#344956">preserved notebook outputs.</text>
+    <text x="955" y="770" font-size="14" fill="#344956">• SMOTE class metrics were not stored</text><text x="975" y="791" font-size="14" fill="#344956">for the separate accuracy experiment.</text>
+    <text x="955" y="828" font-size="14" fill="#344956">• Results are exploratory and split-specific.</text>
+    <text x="80" y="936" font-size="13" fill="#7b8b95">FIGURE 3  |  Comparative model evidence and interpretability signals preserved in the repository</text>
+  </g>
+</svg>

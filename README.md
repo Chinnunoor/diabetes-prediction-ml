@@ -2,6 +2,26 @@
 
 Research portfolio for an exploratory machine-learning study of diabetes outcome prediction using clinical and demographic features.
 
+## Project Visualization
+
+The figures below present the complete research story using the STAR structure: healthcare motivation, predictive objective, analytical workflow, recorded results, and an explainability path. They are designed as research-communication artifacts and do not add or replace any modeling results.
+
+![STAR research architecture](results/figures/project_visualization.svg)
+
+*Figure 1. STAR architecture connecting the healthcare situation, research task, machine-learning action, and evidence-oriented result interpretation.*
+
+![Machine-learning workflow architecture](results/figures/ml_workflow.svg)
+
+*Figure 2. End-to-end workflow from patient clinical data through preprocessing, EDA, feature selection, SMOTE experimentation, model training, evaluation, and explainability.*
+
+![Results summary dashboard](results/figures/results_dashboard.svg)
+
+*Figure 3. Results dashboard using the repository’s preserved hold-out metrics, confusion-matrix examples, random-forest feature importance, and explicit evidence notes for unavailable metrics.*
+
+![Explainable AI direction](results/figures/explainable_ai.svg)
+
+*Figure 4. Explainable AI direction showing how global feature importance can extend toward local attributions and human review after a compatible fitted model is available.*
+
 ## Research question
 
 How effectively can standard supervised-learning models distinguish diabetes outcomes in the included dataset, and which features contribute most to model performance?

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f6f8fa"/>
+  <rect x="0" y="0" width="1600" height="18" fill="#17324d"/>
+  <text x="92" y="86" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#17324d">DIABETES RISK PREDICTION</text>
+  <text x="92" y="124" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#5b6b77">A research story from clinical context to interpretable machine learning</text>
+  <line x1="92" y1="160" x2="1508" y2="160" stroke="#c8d3da" stroke-width="2"/>
+
+  <g font-family="Arial,Helvetica,sans-serif">
+    <rect x="92" y="205" width="330" height="550" rx="8" fill="#ffffff" stroke="#d5e0e5" stroke-width="2"/>
+    <rect x="92" y="205" width="330" height="76" rx="8" fill="#17324d"/>
+    <text x="124" y="241" font-size="15" font-weight="700" fill="#9ed7d5" letter-spacing="2">S  |  SITUATION</text>
+    <text x="124" y="266" font-size="13" fill="#ffffff">Why early risk prediction matters</text>
+    <circle cx="142" cy="335" r="25" fill="#e5f2f1" stroke="#2a7f8e" stroke-width="2"/>
+    <path d="M132 335h20M142 325v20" stroke="#2a7f8e" stroke-width="3"/>
+    <text x="188" y="329" font-size="18" font-weight="700" fill="#17324d">Diabetes</text>
+    <text x="188" y="352" font-size="14" fill="#5b6b77">a persistent healthcare challenge</text>
+    <line x1="142" y1="382" x2="142" y2="422" stroke="#2a7f8e" stroke-width="2"/>
+    <path d="M136 414l6 9 6-9" fill="none" stroke="#2a7f8e" stroke-width="2"/>
+    <text x="124" y="464" font-size="17" font-weight="700" fill="#17324d">Need</text>
+    <text x="124" y="492" font-size="15" fill="#344956">Earlier identification of patients</text>
+    <text x="124" y="514" font-size="15" fill="#344956">at elevated diabetes risk.</text>
+    <rect x="124" y="566" width="266" height="122" rx="6" fill="#eef7f6"/>
+    <text x="144" y="596" font-size="14" font-weight="700" fill="#2a7f8e">INPUT CONTEXT</text>
+    <text x="144" y="623" font-size="14" fill="#344956">Patient clinical and demographic</text>
+    <text x="144" y="645" font-size="14" fill="#344956">attributes → model-ready evidence</text>
+    <text x="124" y="724" font-size="12" fill="#7b8b95">Research motivation</text>
+
+    <rect x="456" y="205" width="330" height="550" rx="8" fill="#ffffff" stroke="#d5e0e5" stroke-width="2"/>
+    <rect x="456" y="205" width="330" height="76" rx="8" fill="#2a7f8e"/>
+    <text x="488" y="241" font-size="15" font-weight="700" fill="#d9f1ef" letter-spacing="2">T  |  TASK</text>
+    <text x="488" y="266" font-size="13" fill="#ffffff">Define the predictive question</text>
+    <text x="488" y="335" font-size="17" font-weight="700" fill="#17324d">Goal</text>
+    <text x="488" y="363" font-size="15" fill="#344956">Predict diabetes risk using</text>
+    <text x="488" y="385" font-size="15" fill="#344956">supervised machine learning.</text>
+    <line x1="488" y1="420" x2="754" y2="420" stroke="#d5e0e5"/>
+    <text x="488" y="456" font-size="14" font-weight="700" fill="#2a7f8e">DATASET</text>
+    <text x="488" y="480" font-size="15" fill="#344956">Pima Indians Diabetes dataset</text>
+    <text x="488" y="502" font-size="13" fill="#7b8b95">Binary target: Outcome</text>
+    <text x="488" y="554" font-size="14" font-weight="700" fill="#2a7f8e">CLINICAL FEATURES</text>
+    <text x="488" y="580" font-size="14" fill="#344956">Glucose  ·  BMI  ·  Age</text>
+    <text x="488" y="603" font-size="14" fill="#344956">Blood Pressure  ·  Insulin</text>
+    <text x="488" y="626" font-size="14" fill="#344956">Pregnancies  ·  Diabetes Pedigree Function</text>
+    <text x="488" y="724" font-size="12" fill="#7b8b95">Research objective</text>
+
+    <rect x="820" y="205" width="330" height="550" rx="8" fill="#ffffff" stroke="#d5e0e5" stroke-width="2"/>
+    <rect x="820" y="205" width="330" height="76" rx="8" fill="#3f657d"/>
+    <text x="852" y="241" font-size="15" font-weight="700" fill="#dbe8ee" letter-spacing="2">A  |  ACTION</text>
+    <text x="852" y="266" font-size="13" fill="#ffffff">Build and evaluate the pipeline</text>
+    <g fill="#eaf3f4" stroke="#2a7f8e" stroke-width="1">
+      <rect x="852" y="316" width="266" height="48" rx="5"/><rect x="852" y="382" width="266" height="48" rx="5"/><rect x="852" y="448" width="266" height="48" rx="5"/><rect x="852" y="514" width="266" height="48" rx="5"/><rect x="852" y="580" width="266" height="48" rx="5"/>
+    </g>
+    <g fill="#17324d" font-size="14" font-weight="700">
+      <text x="985" y="346" text-anchor="middle">Preprocess + inspect</text><text x="985" y="412" text-anchor="middle">Explore + select features</text><text x="985" y="478" text-anchor="middle">Balance training data (SMOTE)</text><text x="985" y="544" text-anchor="middle">Train four candidate models</text><text x="985" y="610" text-anchor="middle">Evaluate + explain</text>
+    </g>
+    <text x="852" y="724" font-size="12" fill="#7b8b95">Reproducible analytical workflow</text>
+
+    <rect x="1184" y="205" width="324" height="550" rx="8" fill="#ffffff" stroke="#d5e0e5" stroke-width="2"/>
+    <rect x="1184" y="205" width="324" height="76" rx="8" fill="#b77731"/>
+    <text x="1216" y="241" font-size="15" font-weight="700" fill="#fff0d9" letter-spacing="2">R  |  RESULT</text>
+    <text x="1216" y="266" font-size="13" fill="#ffffff">Evidence, comparison, interpretation</text>
+    <text x="1216" y="335" font-size="17" font-weight="700" fill="#17324d">Results dashboard</text>
+    <text x="1216" y="365" font-size="15" fill="#344956">Accuracy · Precision · Recall</text>
+    <text x="1216" y="388" font-size="15" fill="#344956">F1-score · confusion matrices</text>
+    <line x1="1216" y1="422" x2="1476" y2="422" stroke="#d5e0e5"/>
+    <text x="1216" y="458" font-size="14" font-weight="700" fill="#b77731">INTERPRETABILITY</text>
+    <text x="1216" y="487" font-size="15" fill="#344956">Feature importance and</text>
+    <text x="1216" y="510" font-size="15" fill="#344956">explainability direction</text>
+    <rect x="1216" y="556" width="260" height="96" rx="6" fill="#fff5e8"/>
+    <text x="1236" y="586" font-size="14" font-weight="700" fill="#b77731">Interpret cautiously</text>
+    <text x="1236" y="611" font-size="13" fill="#5b6b77">Exploratory evidence, not</text>
+    <text x="1236" y="631" font-size="13" fill="#5b6b77">clinical validation.</text>
+    <text x="1216" y="724" font-size="12" fill="#7b8b95">Transparent reporting</text>
+  </g>
+  <text x="92" y="826" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#7b8b95">FIGURE 1  |  STAR architecture for the diabetes prediction research portfolio</text>
+</svg>

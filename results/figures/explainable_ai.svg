@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="820" viewBox="0 0 1500 820">
+  <rect width="1500" height="820" fill="#f6f8fa"/><rect width="1500" height="16" fill="#17324d"/>
+  <g font-family="Arial,Helvetica,sans-serif">
+    <text x="80" y="72" font-size="27" font-weight="700" fill="#17324d">Explainable AI direction</text>
+    <text x="80" y="106" font-size="16" fill="#5b6b77">A transparent path from global feature importance to future patient-level explanations</text>
+    <line x1="80" y1="136" x2="1420" y2="136" stroke="#c8d3da" stroke-width="2"/>
+    <g stroke="#2a7f8e" stroke-width="2" fill="#ffffff"><rect x="90" y="240" width="270" height="300" rx="8"/><rect x="485" y="240" width="270" height="300" rx="8"/><rect x="880" y="240" width="270" height="300" rx="8"/><rect x="1275" y="240" width="145" height="300" rx="8"/></g>
+    <g fill="#eaf3f4" stroke="none"><rect x="90" y="240" width="270" height="14" rx="8"/><rect x="485" y="240" width="270" height="14" rx="8"/><rect x="880" y="240" width="270" height="14" rx="8"/><rect x="1275" y="240" width="145" height="14" rx="8"/></g>
+    <g fill="#17324d" font-size="17" font-weight="700"><text x="225" y="292" text-anchor="middle">1  Clinical inputs</text><text x="620" y="292" text-anchor="middle">2  Predictive model</text><text x="1015" y="292" text-anchor="middle">3  Explanation layer</text><text x="1347" y="292" text-anchor="middle">4  Review</text></g>
+    <g font-size="14" fill="#344956"><text x="120" y="342">Glucose</text><text x="120" y="370">BMI</text><text x="120" y="398">Age</text><text x="120" y="426">Blood pressure</text><text x="120" y="454">Insulin</text><text x="120" y="482">Pregnancies</text><text x="120" y="510">Pedigree function</text></g>
+    <g fill="#d6ecea"><rect x="530" y="335" width="180" height="38" rx="4"/><rect x="530" y="391" width="180" height="38" rx="4"/><rect x="530" y="447" width="180" height="38" rx="4"/></g>
+    <g fill="#17324d" font-size="13" font-weight="700" text-anchor="middle"><text x="620" y="359">Random Forest</text><text x="620" y="415">Logistic Regression</text><text x="620" y="471">SVM / Decision Tree</text></g>
+    <text x="620" y="505" text-anchor="middle" font-size="12" fill="#7b8b95">global + local explanation candidates</text>
+    <g font-size="14" fill="#344956"><text x="915" y="345">Global view</text><text x="915" y="370" font-size="12" fill="#5b6b77">Which variables influence</text><text x="915" y="390" font-size="12" fill="#5b6b77">the model overall?</text><text x="915" y="438">Local view</text><text x="915" y="463" font-size="12" fill="#5b6b77">Why did this patient receive</text><text x="915" y="483" font-size="12" fill="#5b6b77">this risk estimate?</text></g>
+    <g fill="#fff5e8" stroke="#d9b177"><rect x="1300" y="338" width="95" height="48" rx="4"/><rect x="1300" y="410" width="95" height="48" rx="4"/><rect x="1300" y="482" width="95" height="36" rx="4"/></g>
+    <g font-size="12" font-weight="700" fill="#8a5d2d" text-anchor="middle"><text x="1347" y="358">Audit</text><text x="1347" y="375">researcher</text><text x="1347" y="430">clinical</text><text x="1347" y="447">review</text><text x="1347" y="505">future</text></g>
+    <g stroke="#b77731" stroke-width="3" fill="none"><path d="M360 390h110"/><path d="M755 390h110"/><path d="M1150 390h110"/></g><g fill="#b77731"><path d="M458 382l12 8-12 8z"/><path d="M853 382l12 8-12 8z"/><path d="M1248 382l12 8-12 8z"/></g>
+
+    <rect x="90" y="610" width="1330" height="116" rx="7" fill="#ffffff" stroke="#d5e0e5"/>
+    <text x="120" y="646" font-size="15" font-weight="700" fill="#17324d">Current repository evidence</text>
+    <text x="120" y="675" font-size="14" fill="#344956">Stored random-forest importance ranks Glucose, BMI, Age, and Diabetes Pedigree Function highest.</text>
+    <text x="120" y="700" font-size="13" fill="#b77731">Next research step: generate SHAP or model-agnostic local explanations only after fitting/exporting a compatible model.</text>
+    <text x="90" y="780" font-size="13" fill="#7b8b95">FIGURE 4  |  Explainability architecture: global association → local attribution → human review</text>
+  </g>
+</svg>
