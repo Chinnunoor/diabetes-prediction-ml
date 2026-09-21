@@ -25,6 +25,18 @@ results/*.bak
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+
+# Temporary HTML exports
+*_export.html
+*.nbconvert.html
+
+# Python bytecode
+*.pyc
 
 # OS/editor files
 .DS_Store

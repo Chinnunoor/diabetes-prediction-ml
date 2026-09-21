@@ -153,4 +153,8 @@ The repository does not provide medical advice and must not be used for patient-
 
 ## License and Data Use
 
+### Dataset note
+
+The dataset source and provenance should be documented before reuse or redistribution. It contains clinical attributes used for research experimentation; the repository does not claim that it contains private patient data. Confirm the dataset's licensing and privacy status before using it in a public or operational setting.
+
 No software license has been added yet. Before public distribution, add an appropriate code license and document the dataset license, provenance, privacy, and redistribution constraints.
